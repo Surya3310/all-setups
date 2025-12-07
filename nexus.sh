@@ -6,6 +6,7 @@ sudo wget https://download.sonatype.com/nexus/3/nexus-3.79.1-04-linux-x86_64.tar
 sudo tar -xvf nexus-3.79.1-04-linux-x86_64.tar.gz
 sudo mv nexus-3.79.1-04 nexus
 sudo adduser nexus
+su - nexus
 sudo chown -R nexus:nexus /app/nexus
 sudo chown -R nexus:nexus /app/sonatype*
 sudo sed -i '27  run_as_user="nexus"' /app/nexus/bin/nexus
